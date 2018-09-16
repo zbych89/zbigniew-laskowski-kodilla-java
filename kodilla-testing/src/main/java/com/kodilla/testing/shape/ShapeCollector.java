@@ -15,8 +15,13 @@ public class ShapeCollector {
         }
         return result;
     }
-    public Shape getFigure(int n){
-        return this.shapeList.get(n);
+    public Shape getFigure(int n) {
+        if (n >= 0 && n < this.shapeList.size()) {
+            return this.shapeList.get(n);
+        }
+        else {
+            return null;
+        }
     }
     public String showFigures(){
         String result = "";
