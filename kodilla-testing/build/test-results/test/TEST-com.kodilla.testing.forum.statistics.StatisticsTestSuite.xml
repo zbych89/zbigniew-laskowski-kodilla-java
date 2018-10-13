@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-10-11T20:14:24" hostname="monika-Lenovo-G50-45" time="0.013">
+  <properties/>
+  <testcase name="testHundredUserCount" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.003"/>
+  <testcase name="testZeroUserCount" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
+  <testcase name="testZeroCommentCount" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testMorePostsThanComments" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testThousandPostCount" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testZeroPostCount" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="testLessPostsThanComments" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

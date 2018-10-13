@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.library.BooksInHandsTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-10-11T20:14:24" hostname="monika-Lenovo-G50-45" time="0.004">
+  <properties/>
+  <testcase name="testUserWithFiveBooks" classname="com.kodilla.testing.library.BooksInHandsTestSuite" time="0.002"/>
+  <testcase name="testUserWithNoBooks" classname="com.kodilla.testing.library.BooksInHandsTestSuite" time="0.001"/>
+  <testcase name="testUserWithOneBook" classname="com.kodilla.testing.library.BooksInHandsTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
