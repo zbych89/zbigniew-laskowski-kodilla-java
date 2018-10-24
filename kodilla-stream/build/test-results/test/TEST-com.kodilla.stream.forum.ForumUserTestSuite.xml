@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.forum.ForumUserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-24T16:57:40" hostname="monika-Lenovo-G50-45" time="0.072">
+  <properties/>
+  <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite" time="0.043"/>
+  <testcase name="testGetLocationsOfFriendsOfFriends" classname="com.kodilla.stream.forum.ForumUserTestSuite" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
