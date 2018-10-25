@@ -7,8 +7,7 @@ import java.util.stream.Collectors;
 public class StoreMain {
     public static void main(String args[]){
         MovieStore store = new MovieStore();
-        String moviesList = store.getMovies().entrySet().stream()
-                .map(entry -> entry.getValue())
+        String moviesList = store.getMovies().values().stream()
                 .flatMap(list -> list.stream())
                 .collect(Collectors.joining("!","",""));
         System.out.println(moviesList);
