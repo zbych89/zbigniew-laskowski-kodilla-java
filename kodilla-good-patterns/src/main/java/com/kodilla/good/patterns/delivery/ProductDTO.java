@@ -1,10 +1,10 @@
 package com.kodilla.good.patterns.delivery;
 
-public class DTO {
+public class ProductDTO {
     private Product product;
     private int quantity;
 
-    public DTO(Product product, int quantity) {
+    public ProductDTO(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
