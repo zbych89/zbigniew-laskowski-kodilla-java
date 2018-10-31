@@ -1,10 +1,10 @@
 package com.kodilla.good.patterns.delivery;
 
 public class DeliveryRunner {
-    Producent producent = new GlutenFreeShop();
-    public void run(){
-        SupplierDTO dto = producent.getInfo("FoodFactory", "Bread",7);
+    Producent producent;
+    public void run(Producent producent, Supplier supplier){
+        DTO dto = producent.getInfo( "Bread",3);
         producent.process();
-        producent.inform(dto);
+        producent.inform(dto,supplier);
     }
 }

@@ -1,18 +1,12 @@
 package com.kodilla.good.patterns.delivery;
 
-public class SupplierDTO {
-    private Supplier supplier;
+public class DTO {
     private Product product;
     private int quantity;
 
-    public SupplierDTO(Supplier supplier, Product product, int quantity) {
-        this.supplier = supplier;
+    public DTO(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
-    }
-
-    public Supplier getSupplier() {
-        return supplier;
     }
 
     public Product getProduct() {
