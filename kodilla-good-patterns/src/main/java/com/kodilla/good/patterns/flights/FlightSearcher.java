@@ -8,31 +8,32 @@ import java.util.stream.Collectors;
 public class FlightSearcher {
     public static void findFrom(String departure){
         FlightList.getFlights().stream()
-                .filter(f -> f.getDeparture()==departure)
+                .filter(f -> f.getDeparture().equals(departure))
                 .forEach(System.out::println);
     }
     public static void findTo(String arrival){
         FlightList.getFlights().stream()
-                .filter(f -> f.getArrival()==arrival)
+                .filter(f -> f.getArrival().equals(arrival))
                 .forEach(System.out::println);
     }
     public static void findThrough(String through){
         List<String> listOne = FlightList.getFlights().stream()
-                .filter(f -> f.getArrival()==through)
+                .filter(f -> f.getArrival().equals(through))
                 .map(f -> f.getDeparture())
                 .collect(Collectors.toList());
         List<String> listTwo = FlightList.getFlights().stream()
-                .filter(f -> f.getDeparture()==through)
+                .filter(f -> f.getDeparture().equals(through))
                 .map(f -> f.getArrival())
                 .collect(Collectors.toList());
-        List<DoubleFlight> finalList = new ArrayList<>();
+        List<Flight> finalList = new ArrayList<>();
         for(String departure : listOne){
             for(String arrival : listTwo){
-                finalList.add(new DoubleFlight(departure,through,arrival));
+                finalList.add(new Flight(departure,arrival));
             }
         }
+        System.out.println("Available flighs through " + through);
         finalList.stream()
-                .filter(d -> d.getFrom() != d.getTo())
+                .filter(f -> !(f.getDeparture().equals(f.getArrival())))
                 .forEach(System.out::println);
     }
 }
