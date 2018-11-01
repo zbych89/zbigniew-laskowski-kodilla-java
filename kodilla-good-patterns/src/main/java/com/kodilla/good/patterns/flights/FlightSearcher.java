@@ -28,12 +28,14 @@ public class FlightSearcher {
         List<Flight> finalList = new ArrayList<>();
         for(String departure : listOne){
             for(String arrival : listTwo){
-                finalList.add(new Flight(departure,arrival));
+                if(!(departure.equals(arrival))) {
+                    finalList.add(new Flight(departure, through));
+                    finalList.add(new Flight(through, arrival));
+                }
             }
         }
         System.out.println("Available flighs through " + through);
         finalList.stream()
-                .filter(f -> !(f.getDeparture().equals(f.getArrival())))
                 .forEach(System.out::println);
     }
 }
