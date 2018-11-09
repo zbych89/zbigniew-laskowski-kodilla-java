@@ -12,9 +12,7 @@ public class TaskList {
         tasks.add(task);
     }
 
-    public void showTasks() {
-        for(String task:tasks){
-            System.out.println(task);
-        }
+    public List<String> getTasks() {
+        return tasks;
     }
 }
