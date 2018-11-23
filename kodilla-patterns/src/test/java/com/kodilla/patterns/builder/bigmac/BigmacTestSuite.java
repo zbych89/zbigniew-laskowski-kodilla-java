@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class BigmacTestSuite {
     @Test
-    public void testBigmanBuilder(){
+    public void testBigmacBuilder(){
         Bigmac bigmac = new Bigmac.BigmacBuilder()
                 .sesame()
                 .burgers(2)
