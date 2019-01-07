@@ -41,7 +41,7 @@ public class CompanyFacadeTestSuite {
         int id3 = employee3.getId();
         int id4 = employee4.getId();
         int id5 = employee5.getId();
-        List<Employee> employees = companyFacade.searchEmployees("%mit%");
+        List<Employee> employees = companyFacade.searchEmployees("mit");
         //Then
         Assert.assertEquals(2,employees.size());
         //Cleanup
@@ -70,7 +70,7 @@ public class CompanyFacadeTestSuite {
         int id3 = company3.getId();
         int id4 = company4.getId();
         int id5 = company5.getId();
-        List<Company> companies = companyFacade.searchCompanies("%ten%");
+        List<Company> companies = companyFacade.searchCompanies("ten");
         //Then
         Assert.assertEquals(1,companies.size());
         //Cleanup

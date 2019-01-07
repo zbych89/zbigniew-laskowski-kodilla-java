@@ -4,19 +4,16 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
-@NamedNativeQueries({
 @NamedNativeQuery(
         name = "Company.retrieveCompaniesStartingWith",
         query = "SELECT * FROM companies " +
                 "WHERE LEFT(company_name,3) = :NAME",
         resultClass = Company.class
-),
-@NamedNativeQuery(
+)
+@NamedQuery(
         name = "Company.retrieveCompaniesContaining",
-        query = "SELECT * FROM companies " +
-                "WHERE company_name LIKE :ARG",
-        resultClass = Company.class
-)})
+        query = "FROM Company WHERE name LIKE CONCAT('%',:ARG,'%')"
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
