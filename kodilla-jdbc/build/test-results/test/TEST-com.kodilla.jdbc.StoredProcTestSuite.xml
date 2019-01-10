@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.jdbc.StoredProcTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-10T19:30:15" hostname="monika-Lenovo-G50-45" time="0.798">
+  <properties/>
+  <testcase name="testUpdateVipLevels" classname="com.kodilla.jdbc.StoredProcTestSuite" time="0.798"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
